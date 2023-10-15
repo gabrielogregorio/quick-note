@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Note</title>
+  </head>
+  <body class="glass">
+    <div>
+      <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+
+        html {
+          background-color: #222222;
+        }
+
+        #note {
+          border: 2px solid white;
+          background-color: transparent;
+          color: white;
+          outline: none;
+          height: 400px;
+          width: 500px;
+          padding: 24px;
+          overflow-y: auto;
+          overflow-x: hidden;
+          font-size: 1rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .options {
+          padding: 1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        #download-notes {
+          color: white;
+          background: transparent;
+          text-decoration: underline;
+          font-weight: bold;
+          outline: none;
+          padding: 0.1rem 0.1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          border-radius: 0.8rem;
+          border: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .tips {
+          color: white;
+          font-size: 0.8rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      </style>
+
+      <textarea name="note" id="note"></textarea>
+
+      <div class="options">
+        <button type="button" id="download-notes">Download</button>
+
+        <p class="tips">Press Alt + A to open and close</p>
+      </div>
+      <script src="./popup.js"></script>
+    </div>
+  </body>
+</html>
