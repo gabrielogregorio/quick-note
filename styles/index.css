@@ -1,0 +1,102 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* THEMES */
+
+.yellow {
+  background-color: #fdf9bf;
+  color: #000000;
+}
+
+.blue {
+  background-color: #b6d6fd;
+  color: #000000;
+}
+
+.green {
+  background-color: #d5f692;
+  color: #000000;
+}
+
+.pink {
+  background-color: #f2a5cb;
+  color: #000000;
+}
+
+.dark {
+  background-color: #222222;
+  color: white;
+}
+.white {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+
+/* textarea */
+
+.container-textarea {
+  border: 2px solid #888888cc;
+  color: inherit;
+  background-color: transparent;
+  font-weight: 400;
+  outline: none;
+  height: 400px;
+  width: 500px;
+  padding: 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Options */
+.container-options {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options-buttons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.button-download {
+  background: transparent;
+  text-decoration: underline;
+  color: inherit;
+  font-weight: bold;
+  outline: none;
+  padding: 0.1rem 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button-toggle-theme {
+  margin-left: 1rem;
+  background-color: inherit;
+  color: inherit;
+  cursor: pointer;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  display: block !important;
+  border-radius: 100%;
+  border: 2px solid #888888cc;
+}
+
+.options-tips {
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
