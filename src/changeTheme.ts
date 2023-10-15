@@ -1,5 +1,5 @@
-const basePage = document.getElementById("app");
-const updateTheme = document.getElementById("change-theme");
+const basePage = document.getElementById("app") as HTMLElement;
+const updateTheme = document.getElementById("change-theme") as HTMLElement;
 
 const localStorageKeyPreferenceTheme = "preferenceLocalStorage";
 const themes = ["dark", "yellow", "blue", "green", "pink", "white"];
