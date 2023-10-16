@@ -4,6 +4,7 @@
   "short_name": "QNote",
   "description": "Instantly capture your thoughts with a simple Ctrl+A. Just write it down.",
   "version": "1.1.0",
+  "default_locale": "en",
   "author": "gabriel.gregorio.1@outlook.com",  
   "icons": {
     "16": "public/icon16.png",
