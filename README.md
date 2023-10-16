@@ -1,3 +1,3 @@
 # Quick Note
 
-Está é a minha primeira extensão, e o foco dela é ser simples
+Jot down your ideas quickly by pressing ALT + A or clicking on the extension.
