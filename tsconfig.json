@@ -20,9 +20,9 @@
     "noEmit": false,
     "jsx": "preserve",
     "incremental": true,
-    "rootDir": "src",
-    "outDir": "dist"
+    "rootDir": "./src",
+    "outDir": "./dist"
   },
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "include": ["./src/**/*.ts"],
   "exclude": ["node_modules"]
 }

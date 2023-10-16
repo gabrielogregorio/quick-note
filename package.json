@@ -7,7 +7,9 @@
   "author": "Gabriel Gregório <gabriel.gregorio.1@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc && tsc-alias && node buildExtension.js",
+    "build": "yarn __prepare-build && tsc && yarn __finish-build",
+    "__prepare-build":"node prepareBuild.js",
+    "__finish-build":"node buildExtension.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
   },
   "devDependencies": {
