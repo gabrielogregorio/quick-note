@@ -76,7 +76,7 @@ jobs:
             - ⭐ Install packages...
 
       - name: install dependencies
-        run: yarn i
+        run: yarn
 
       - name: comment on PR, building app
         uses: peter-evans/create-or-update-comment@v3
