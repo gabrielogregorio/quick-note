@@ -46,11 +46,11 @@ jobs:
             const labelsToAdd = [];
 
             for (const message of commitMessages) {
-              if (message.includes("fix")) { labelsToAdd.push("bug"); }
-              if (message.includes("feat")) { labelsToAdd.push("feature"); }
-              if (message.includes("docs")) { labelsToAdd.push("documentation"); }
-              if (message.includes("refactor")) { labelsToAdd.push("refactor"); }
-              if (message.includes("chore")) { labelsToAdd.push("help wanted"); }
+              if (message?.includes("fix")) { labelsToAdd.push("bug"); }
+              if (message?.includes("feat")) { labelsToAdd.push("feature"); }
+              if (message?.includes("docs")) { labelsToAdd.push("documentation"); }
+              if (message?.includes("refactor")) { labelsToAdd.push("refactor"); }
+              if (message?.includes("chore")) { labelsToAdd.push("help wanted"); }
             }
 
             if (labelsToAdd.length > 0) {
@@ -66,13 +66,13 @@ jobs:
             })).data.body;
 
             const verifyIfNeedAddsResolve = (updatedBodyLocal) => {
-              if(!updatedBodyLocal.includes('[...autoGenerate]')) {
+              if(!updatedBodyLocal?.includes('[...autoGenerate]')) {
                 return updatedBodyLocal
               }
 
               let commitMessagesAreString = ''
               for (const message of commitMessages) {
-                if (!updatedBodyLocal.includes(message)) {
+                if (!updatedBodyLocal?.includes(message)) {
                   commitMessagesAreString += `- ${message}\n`;
                 }
               }
