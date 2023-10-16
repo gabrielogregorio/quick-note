@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Quick Note</title>
+  </head>
+  <body id="app">
+    <div class="container">
+      <textarea name="note" id="textarea" class="container-textarea"></textarea>
+
+      <div class="container-options">
+        <div class="options-buttons">
+          <button type="button" id="note-download" class="button-download">Download</button>
+          <button type="button" id="change-theme" class="button-toggle-theme" title="Click to change theme" aria-label="click to change theme"></button>
+        </div>
+
+        <p class="options-tips">Press Alt + A to open and close</p>
+      </div>
+
+      <script src="./changeTheme.js"></script>
+      <script src="./saveNote.js"></script>
+      <script src="./downloadNotes.js"></script>
+    </div>
+  </body>
+</html>

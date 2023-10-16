@@ -1,0 +1,119 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* THEMES */
+
+:root {
+  --main-bg-color: #222222;
+  --main-text-color: white;
+  --main-border-color: white;
+}
+
+.dark {
+  --main-bg-color: #222222;
+  --main-text-color: white;
+  --main-border-color: white;
+}
+
+.yellow {
+  --main-bg-color: #fdf9bf;
+  --main-text-color: #000000;
+  --main-border-color: #777777;
+}
+
+.blue {
+  --main-bg-color: #b6d6fd;
+  --main-text-color: #000000;
+  --main-border-color: white;
+}
+
+.green {
+  --main-bg-color: #d5f692;
+  --main-text-color: #000000;
+  --main-border-color: white;
+}
+
+.pink {
+  --main-bg-color: #f2a5cb;
+  --main-text-color: #000000;
+  --main-border-color: white;
+}
+
+.white {
+  --main-bg-color: #dfdfdf;
+  --main-text-color: #000000;
+  --main-border-color: white;
+}
+
+#app {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+/* textarea */
+
+.container-textarea {
+  border: 2px solid var(--main-border-color);
+  color: var(--main-text-color);
+  background-color: transparent;
+  font-weight: 400;
+  outline: none;
+  height: 400px;
+  width: 500px;
+  padding: 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Options */
+.container-options {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options-buttons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.button-download {
+  background: transparent;
+  text-decoration: underline;
+  color: var(--main-text-color);
+  font-weight: bold;
+  outline: none;
+  padding: 0.1rem 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button-toggle-theme {
+  margin-left: 1rem;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  cursor: pointer;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  display: block;
+  border-radius: 100%;
+  border: 2px solid #888888cc;
+}
+
+.options-tips {
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

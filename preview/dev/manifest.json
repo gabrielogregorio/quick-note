@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Note",
+  "short_name": "QNote",
+  "description": "Instantly capture your thoughts with a simple Ctrl+A. Just write it down.",
+  "version": "1.1.0",
+  "author": "gabriel.gregorio.1@outlook.com",  
+  "icons": {
+    "16": "public/icon16.png",
+    "32": "public/icon32.png",
+    "48": "public/icon48.png",
+    "128": "public/icon128.png"
+  },
+
+  "action": {
+    "default_title": "Just write it down.",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "public/icon16.png",
+      "32": "public/icon32.png",
+      "48": "public/icon48.png",
+      "128": "public/icon128.png"
+    }
+  },
+
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+A",
+        "mac": "Alt+A"
+      },
+      "description": "Open extension"
+    }
+  },
+  "permissions": [
+    "storage"
+  ]
+}
