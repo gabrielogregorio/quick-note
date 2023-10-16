@@ -5,43 +5,60 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 /* THEMES */
 
-.yellow {
-  background-color: #fdf9bf;
-  color: #000000;
-}
-
-.blue {
-  background-color: #b6d6fd;
-  color: #000000;
-}
-
-.green {
-  background-color: #d5f692;
-  color: #000000;
-}
-
-.pink {
-  background-color: #f2a5cb;
-  color: #000000;
+:root {
+  --main-bg-color: #222222;
+  --main-text-color: white;
+  --main-border-color: white;
 }
 
 .dark {
-  background-color: #222222;
-  color: white;
+  --main-bg-color: #222222;
+  --main-text-color: white;
+  --main-border-color: white;
 }
+
+.yellow {
+  --main-bg-color: #fdf9bf;
+  --main-text-color: #000000;
+  --main-border-color: #777777;
+}
+
+.blue {
+  --main-bg-color: #b6d6fd;
+  --main-text-color: #000000;
+  --main-border-color: white;
+}
+
+.green {
+  --main-bg-color: #d5f692;
+  --main-text-color: #000000;
+  --main-border-color: white;
+}
+
+.pink {
+  --main-bg-color: #f2a5cb;
+  --main-text-color: #000000;
+  --main-border-color: white;
+}
+
 .white {
-  background-color: #dfdfdf;
-  color: #000000;
+  --main-bg-color: #dfdfdf;
+  --main-text-color: #000000;
+  --main-border-color: white;
+}
+
+#app {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
 
 /* textarea */
 
 .container-textarea {
-  border: 2px solid #888888cc;
-  color: inherit;
+  border: 2px solid var(--main-border-color);
+  color: var(--main-text-color);
   background-color: transparent;
   font-weight: 400;
   outline: none;
@@ -71,7 +88,7 @@
 .button-download {
   background: transparent;
   text-decoration: underline;
-  color: inherit;
+  color: var(--main-text-color);
   font-weight: bold;
   outline: none;
   padding: 0.1rem 0.1rem;
@@ -86,12 +103,12 @@
 
 .button-toggle-theme {
   margin-left: 1rem;
-  background-color: inherit;
-  color: inherit;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   cursor: pointer;
   min-width: 1.5rem;
   min-height: 1.5rem;
-  display: block !important;
+  display: block;
   border-radius: 100%;
   border: 2px solid #888888cc;
 }
