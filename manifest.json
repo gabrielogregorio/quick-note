@@ -3,7 +3,7 @@
   "name": "Quick Note",
   "short_name": "QNote",
   "description": "Write down your thoughts quickly, with a simple ALT + A",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "gabriel.gregorio.1@outlook.com",  
   "content_security_policy": {
     "extension_pages": "default-src 'self'"
@@ -35,7 +35,5 @@
       "description": "Open the extension"
     }
   },
-  "permissions": [
-    "storage"
-  ]
+  "permissions": []
 }
